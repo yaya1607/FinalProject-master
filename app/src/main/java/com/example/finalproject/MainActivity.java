@@ -23,7 +23,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     Database database;
-
+    String userName =null;
     int lanchUserActivity = 1;
     int lanchGame = 0;
     @Override
@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
             String ten = leaderboard.getInt(0)+") "+ leaderboard.getString(1) + ": " + leaderboard.getString(2)+ ", " + leaderboard.getString(3)+ ", " + leaderboard.getString(4);
             Toast.makeText(this,ten,Toast.LENGTH_LONG).show();
         }
-        database.QueryData("DELETE FROM leaderboard");
 
         ImageView btnStart = (ImageView) findViewById(R.id.btnStart);
         btnStart.setOnClickListener(new View.OnClickListener() {
@@ -45,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(MainActivity.this,DifficultyActivity.class);
+                intent.putExtra("UserName",userName);
                 startActivityForResult(intent,lanchGame);
             }
         });

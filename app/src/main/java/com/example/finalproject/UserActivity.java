@@ -23,11 +23,11 @@ public class UserActivity extends AppCompatActivity {
         EditText etNameUser = (EditText) findViewById(R.id.etNameUser);
         Spinner spAgeUser = (Spinner) findViewById(R.id.spinnerAgeUser);
 
-        intent.putExtra("AgeUser",spAgeUser.getSelectedItem().toString());
+        intent.putExtra("UserAge",spAgeUser.getSelectedItem().toString());
 
         String strNameUser = new String(etNameUser.getText().toString());
         strNameUser = cleanText(strNameUser);
-        intent.putExtra("NameUser", strNameUser);
+        intent.putExtra("UserName", strNameUser);
         if (strNameUser.equals("")){
             Toast.makeText(UserActivity.this,"Please enter your name!",Toast.LENGTH_LONG).show();
         }else{
