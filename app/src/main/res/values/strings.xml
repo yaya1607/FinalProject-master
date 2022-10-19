@@ -1,0 +1,18 @@
+<resources>
+    <string name="App_name">Matching the TWO</string>
+    <string name="Start">Start</string>
+    <string name="HighScore">LeaderBoard</string>
+    <string name="Account">Switch player</string>
+    <string name="Exit">Exit</string>
+    <string name="Title">Matching the TWO</string>
+    <string name="btnConfirm">Confirm</string>
+    <string name="tvAgeUser">Age:</string>
+    <string name="tvNameUser">Name:</string>
+    <string name="tvTitleUser">Player setting</string>
+
+    <string name="score">Score : %d</string>
+    <string name="result_title">GAME OVER</string>
+    <string name="result_score">%d</string>
+    <string name="high_score">High Score : %d</string>
+    <string name="btn_try_again">Return to menu</string>
+</resources>
