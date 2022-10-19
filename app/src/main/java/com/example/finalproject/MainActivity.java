@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
         database.QueryData("CREATE TABLE IF NOT EXISTS Leaderboard(Id INTEGER PRIMARY KEY AUTOINCREMENT, Name VARCHAR(200), EasyScore INTEGER, MediumScore INTEGER, HardScore INTEGER)");
 
-        database.QueryData("INSERT INTO Leaderboard VALUES (null, 'Triet', 200, 350, 500) ");
+        //database.QueryData("INSERT INTO Leaderboard VALUES (null, 'Triet', 200, 350, 500) ");
     }
 
     @Override
