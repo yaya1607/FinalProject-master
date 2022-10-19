@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(MainActivity.this,DifficultyActivity.class);
                 startActivityForResult(intent,lanchGame);
-
             }
         });
 
